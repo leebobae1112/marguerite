@@ -1,0 +1,30 @@
+$color: #f00;
+$wd: 400px;
+$font-color: #333;
+$font-colorG: #8ac007;
+$font: "맑은 고딕";
+
+header {
+    nav {
+        width: 800px;
+        border: 1px solid $color;
+    ul#menu {
+        list-style: none;
+        width: $wd;
+        // background: $color;
+        background: if($wd < 500,yellow,blue);
+        display: flex;
+        margin: 0 auto;
+        li {
+            width: 25%;
+            a {
+                display: block;
+                padding: 6px 12px;
+                text-decoration: none;
+                color: $font-colorG;
+                }
+            }
+    
+        }
+    }
+}

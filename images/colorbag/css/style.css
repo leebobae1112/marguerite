@@ -1,0 +1,120 @@
+@charset "utf-8";
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: block;
+}
+.clearfix::after {
+    clear: both;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+body {
+    font-family: Arial, "맑은 고딕", sans-serif;
+}
+.top {
+    width: 242px;
+    margin: 20px auto;
+    
+}
+.top_menu ul {
+    float: right;
+}
+.top_menu ul li {
+    float: left;
+}
+.menu {
+    height: 33px;
+    background: #425b71;
+}
+.menu ul {
+    width: 999px;
+    margin: 0 auto;
+}
+.menu ul li {
+    float: left;
+}
+.menu ul li::after {
+    content: url(../images/color_topmenuline.jpg);
+}
+.menu ul li:last-child::after {
+    content: "";
+}
+.main_visual {
+    width: 999px;
+    margin: 20px auto;
+}
+input[type=radio] {
+    display: none;
+}
+.main_visual ul.visual li {
+    display: none;
+    font-size: 0;
+}
+#bag1:checked ~ .main_visual ul.visual li:first-child,
+#bag2:checked ~ .main_visual ul.visual li:nth-child(2),
+#bag3:checked ~ .main_visual ul.visual li:nth-child(3)
+ {
+    display: block;
+}
+
+.main_visual ul.btn li {
+    width: 33.333%;
+    float: left;
+    background: #9cc;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+}
+.main_visual ul.btn li label {
+    display: block;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+#bag1:checked ~ .main_visual ul.btn li:first-child {
+    background: #699;
+}
+#bag2:checked ~ .main_visual ul.btn li:nth-child(2) {
+    background: #699;
+}
+#bag3:checked ~ .main_visual ul.btn li:nth-child(3) {
+    background: #699;
+}
+.main_visual ul.btn li:hover {
+    background: #ccc;
+}
+.product {
+    width: 999px;
+    margin: 0 auto;
+}
+.product ul li {
+    float: left;
+    text-align: center;
+    width: 25%;
+}
+.notice table {
+    table-layout: fixed;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px 0 0;
+}
+.cs {
+    width: 999px;
+    margin: 0 auto;
+}
+
+
+.cs ul li:first-child:hover {
+    background: url(../images/csbanner_over.jpg) no-repeat;
+}

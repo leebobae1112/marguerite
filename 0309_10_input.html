@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            font-size: 0;
+        }
+        /* div {
+            display: none;
+        } */
+        input[type=radio]{
+            display: none;
+        }
+        .tabcon {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            color: white;
+        }
+     .tabcon h1 {
+                display: none;
+            }
+       
+       #con1 {
+            background: rgb(91, 26, 137);
+       }
+       
+       label {
+            display: block;
+            float: left;
+            width: 25%;
+            padding: 10px 0;
+            background-color: #9cc;
+            font-size: 16px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+        }
+        label:first-of-type {
+            background: rgb(91, 26, 137);
+        }
+        label:nth-of-type(2) {
+            background: rgb(50, 166, 151);
+        }
+        label:nth-of-type(3) {
+            background: blue;
+        }
+        label:nth-of-type(4) {
+            background: orange;
+        }
+        #content1:checked ~ #con1 {
+           background: rgb(91, 26, 137);
+        }
+        #content2:checked ~ #con1 {
+           background: rgb(50, 166, 151);
+        }
+        #content3:checked ~ #con1 {
+            background: blue
+        }
+        #content4:checked ~ #con1 {
+            background: orange;
+        }
+        #content1:checked ~ #con1 h1:first-child {
+            display: block;
+        }
+        #content2:checked ~ #con1 h1:nth-child(2) {
+            display: block;
+        }
+        #content3:checked ~ #con1 h1:nth-child(3) {
+            display: block;
+        }
+        #content4:checked ~ #con1 h1:nth-child(4) {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" name="con" id="content1" checked>
+    <input type="radio" name="con" id="content2">
+    <input type="radio" name="con" id="content3">
+    <input type="radio" name="con" id="content4">
+
+    <div id=con1 class="tabcon">
+        <h1>content1</h1>
+        <h1>content2</h1>
+        <h1>content3</h1>
+        <h1>content4</h1>
+    </div>
+    
+    <p>
+        <label for="content1">content1</label>
+        <label for="content2">content2</label>
+        <label for="content3">content3</label>
+        <label for="content4">content4</label>
+      </p>
+</body>
+</html>

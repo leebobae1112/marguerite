@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        input {
+            display: none;
+        }
+        ul {
+            list-style: none;
+        }
+        .btn {
+            position: absolute;
+            z-index: 1;
+        }
+        .btn li {
+            float: left;
+            width: 100px;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 40px; 
+        }
+       
+        
+        .btn li:nth-child(2) {
+            background: #ddd;
+        }
+        .con {
+            position: relative;
+            width: 350px;
+            height: 150px;
+            top: 41px;
+            border: 1px solid #000;
+        }
+        .btn li label {
+            display: block;
+            width: 100%;
+        }
+        #one:checked ~ .btn li:first-child {
+            background: #fff;
+            border-bottom-color: #fff;
+            border-right: none;
+
+        }
+        #one:checked ~ .con .second {
+            display: none;
+        }
+        #two:checked ~ .btn li:last-child {
+            background: #fff;
+            border-left: none;
+            border-bottom-color: #fff;
+
+        }
+        #two:checked ~ .con .first {
+            display: none;
+        }
+        .first table td:last-child {
+            font-weight: bold;
+        }
+        .first table {
+            table-layout: fixed;
+            margin: 5px 10px;
+            float: left;
+            width: 100%
+            
+        }
+        .first table td:first-child {
+            width: 220px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        img {
+            width: 33.333%;
+            height: 150px;
+            font-size: 16px;
+            float: left;
+        }
+     
+
+    </style>
+</head>
+<body>
+    <input type="radio" name="con" id="one" checked>
+    <input type="radio" name="con" id="two">
+    <ul class="btn">
+        <li><label for="one">공지사항</label></li>
+        <li><label for="two">갤러리</label></li>
+    </ul>
+    <ul class="con">
+        <li class="first">
+            <table>
+                <tr>
+                    <td>애스크로 서비스 변경 약관을 확인하세요</td>
+                    <td>2019-10-10</td>
+                </tr>
+                <tr>
+                    <td>배송 택배사 변경 및 배송방식 변경에 따른 공지</td>
+                    <td>2019-09-27 </td>
+                </tr>
+                <tr>
+                    <td>여름 이월상품 정리 세일 안내</td>
+                    <td>2019-09-07</td>
+                </tr>
+                <tr>
+                    <td>여름 바캉스 상품 정리 세일 안내</td>
+                    <td>2019-08-24</td>
+                </tr>
+                <tr>
+                    <td>반품 및 교환 조건 변경 공지 </td>
+                    <td>2019-07-27</td>
+                </tr>
+                <tr>
+                    <td>상품별 사이즈표 보는 방법과 치수 공지</td>
+                    <td>2019-05-25</td>
+                </tr>
+            </table>
+        </li>
+        <li class="second">
+            <img src="images/gallery01.gif" alt="gallery01">
+            <img src="images/gallery02.gif" alt="gallery02">
+            <img src="images/gallery03.gif" alt="gallery03">
+        </li>
+    </ul>
+
+</body>
+</html>

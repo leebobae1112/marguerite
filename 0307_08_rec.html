@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .wrap {
+            width: 1280px;
+            color: #fff;
+            margin: 0 auto;
+            
+        }
+        .one, .two, .six {
+            height: 100px;
+        }
+        .one > div {
+            width: 33.3333%;
+            height: 100%;
+            float: left;
+        }
+        .aaa {
+            background: #aaa;
+        }
+        .bbb {
+            background: #bbb;
+        }
+        .ccc {
+            background: #ccc;
+        }
+
+        .two, .six {
+            background: #998BEE;
+        }
+        .three, .five {
+            background: #7EEF9D;
+        }
+        .three {
+            width: 20%;
+           
+        }
+        .four {
+            width: 70%;
+            
+            background: #BBBBBB;
+        }
+        .five {
+            width: 10%;
+           
+        }
+        .middle > div {
+            float: left;
+            height: 500px;
+        }
+        .six {
+            clear: left;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="one">
+            <div class="aaa">aaa</div>
+            <div class="bbb">bbb</div>
+            <div class="ccc">ccc</div>
+        </div>
+        <div class="two">2</div>
+        <div class="middle">
+            <div class="three">3</div>
+            <div class="four">4</div>
+            <div class="five">5</div>
+        </div>
+        <div class="six">6</div>
+    </div>
+</body>
+</html>

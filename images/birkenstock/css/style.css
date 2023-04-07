@@ -1,0 +1,128 @@
+@charset "utf-8";
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        body {
+            font-family: Arial, "맑은 고딕", sans-serif;
+        }
+        .top {
+            background: darkblue;
+            height: 50px;
+            margin: 0 auto;
+        }
+        .top ul {
+            width: 1300px;
+            float: right;
+            padding-right: 100px;
+           
+        }
+        .top li {
+            float: right;
+            color: #fff;
+            margin-right: 50px;
+            line-height: 50px;
+        }
+        .logo {
+            width: 1182px;
+            height: 150px;
+            margin: 0 auto;
+            line-height: 150px;
+        }
+        .logo img {
+            vertical-align: middle;
+            margin-left: 500px 
+        }
+        .menu {
+            width: 837px;
+            height: 50px; 
+            margin: 0 auto;
+            line-height: 50px;
+        }
+        .menu li {
+            width: 14.285%;
+            float: left;
+        }
+        .menu li:nth-child(1) {
+            padding-left: 25px;
+            box-sizing: border-box;
+        }
+        .menu li:nth-child(3) {
+            padding-left: 30px;
+            box-sizing: border-box;
+        }
+        .visual {
+            width: 837px;
+            height: 455px;
+            margin: 0 auto;
+           
+        }
+        .icon {
+            width: 837px;
+            margin: 0 auto;
+            overflow: hidden;
+           
+        }
+        .con li {
+            position: relative;
+            width: 25%;
+            height: 109px;
+            float: left;
+            text-align: center;
+        }
+            
+        .con li p {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 100px;
+            height: 100px;
+            border: 1px solid #333;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 100px;
+            font-size: 14px;
+            transform: translate(-50%, -50%);
+        }
+        .sub {
+            width: 1182px;
+            margin: 0 auto;
+        }
+        .sub ul {
+            overflow: hidden;
+        }
+        .sub ul li {
+            position: relative;
+            float: left;
+            width: 33.333%;
+            height: 333px;
+           
+        }
+        .sub ul li p {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            left: 0;
+            top: -100%;
+            text-align: center;
+            transition: 1s;
+        }
+        .sub ul li:hover p {
+            top: 0;
+        }
+        .sub ul li p a {
+            position: absolute;
+            color: #fff;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }

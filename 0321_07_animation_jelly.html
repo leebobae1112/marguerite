@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JellyBeans</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+KR:wght@100;400;700&family=Rammetto+One&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {font-family: 'Noto Sans', sans-serif;
+              font-family: 'Noto Sans KR', sans-serif;
+              font-family: 'Rammetto One', cursive;
+              background: #6b566b;
+              margin-top: 100px;
+        }
+        section {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .c1 {
+            display: inline-block;
+            position: relative;
+            width: 1.250em;
+            height: 1.250em;
+            
+        }
+        .c1::before {
+            content: "";
+            display: block;
+            width: 100%;
+            border-radius: 50%;
+            height: 0.625em;
+            background: rgba(0, 0, 0, 0.1);
+            position: absolute;
+            bottom: -0.1em;
+
+        }
+        .c1::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: #ffe1c9;
+            border-radius: 50%;
+            position: relative;
+            top: -2.5em;
+            transform: rotate(45deg);
+
+        }
+        .c2 {
+            display: inline-block;
+            position: relative;
+            width: 1.875em;
+            height: 1.875em;
+            
+        }
+        .c2::before {
+            content: "";
+            display: block;
+            width: 100%;
+            border-radius: 50%;
+            height: 0.9383em;
+            background: rgba(0, 0, 0, 0.1);
+            position: absolute;
+            bottom: -0.1em;
+            animation: shadow 1s linear 0.2s infinite;
+        }
+        .c2::after { 
+            content: ""; 
+            display: block; 
+            width: 100%; 
+            height: 100%;
+            background: #fac7b4; 
+            border-radius: 50%; 
+            position: absolute; 
+            top: -2.5em; 
+            transform: rotate(45deg); 
+            animation: jellijump 1s linear 0.2s infinite;
+        }
+        .c3 {
+            display: inline-block; 
+            position: relative; 
+            width: 2.5em; 
+            height: 2.5em;
+        }
+        .c3::before { 
+            content: ""; 
+            display: block; 
+            width: 100%; 
+            border-radius: 50%; 
+            height: 1.25em; 
+            background: rgba(0,0,0,0.1); 
+            position: absolute; 
+            bottom: -0.1em; 
+            animation: shadow 1s linear 0.4s infinite;
+        }
+        .c3::after { 
+            content: ""; 
+            display: block; 
+            width: 100%; 
+            height: 100%; 
+            background: #fca89d; 
+            border-radius: 50%; 
+            position: relative; 
+            top: -2.5em; 
+            transform: rotate(45deg); 
+            animation: jellijump 1s linear 0.4s infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+        <div class="c4"></div>
+    </section>
+    <section>
+        <h1>JellyBeans</h1>
+    </section>
+</body>
+</html>

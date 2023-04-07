@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        #wrap {
+            display: grid;
+            grid-template-columns: 200px 200px 400px 200px 200px;
+            grid-template-rows: 100px 300px 200px 100px;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        #wrap .logo {
+            line-height: 100px;
+        }
+        #wrap div:first-child {
+            grid-column: 1 / 2;
+            background: #aaa;
+            color: #fff;
+            /* line-height: 100px; */
+        }
+        #wrap div:first-child img {
+            vertical-align: middle;
+        }
+        #wrap div:nth-child(2) {
+            /* position: relative; */
+            display: grid;
+            justify-content: end;
+            align-items: center;
+            grid-column: 2 / 6;
+            background: #546;
+            color: #fff;
+        }
+        #wrap div:nth-child(2) .menu {
+            /* position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%); position 방법*/
+            /* float: right;
+            margin: 25px 20px 25px 0; float방법 */
+            width: 800px;
+            height: 50px;
+            border: 1px solid #333;
+        }
+        #wrap div:nth-child(2) .menu > ul {
+            text-align: center;
+        }
+        #wrap div:nth-child(2) .menu > ul > li {
+            position: relative;
+            float: left;
+            width: 25%;
+        }
+        #wrap div:nth-child(2) .menu > ul > li > a {
+            line-height: 50px;
+        }
+        #wrap div:nth-child(2) .menu > ul .sub {
+            position: absolute;
+            left: 0;
+            top: 50px;
+            width: 100%;
+            background: #fff;
+            z-index: 1;
+        }
+        #wrap div:nth-child(2) .menu > ul .sub li a {
+            line-height: 30px;
+        }
+        #wrap div:nth-child(3) {
+            grid-column: 1 / 6;
+            grid-row: 2;
+            background: #486;
+            color: #fff;
+        }
+        #wrap div:nth-child(4) {
+            grid-column: 1 / 3;
+            grid-row: 3;
+            background: #135;
+            color: #fff;
+        }
+        #wrap div:nth-child(5) {
+            grid-column: 3 / 4;
+            grid-row: 3;
+            background: #345;
+            color: #fff;
+        }
+        #wrap div:nth-child(6) {
+            grid-column: 4 / 6;
+            grid-row: 3;
+            background: #325;
+            color: #fff;
+        }
+        #wrap div:nth-child(7) {
+            grid-column: 1 / 2;
+            grid-row: 4;
+            background: #328;
+            color: #fff;
+        }
+        #wrap div:nth-child(8) {
+            grid-column: 2 / 5;
+            grid-row: 4;
+            background: #054;
+            color: #fff;
+        }
+        #wrap div:nth-child(9) {
+            background: #003;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="logo">
+            <div><img src="https://placeimg.com/200/40/any" alt="랜덤이미지"></div>
+        </div>
+        <div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">탑</a>
+                      <ul class="sub">
+                        <li><a href="#">셔츠</a></li>
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">맨투맨</a></li>
+                        <li><a href="#">티셔츠</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">아우터</a>
+                        <ul class="sub">
+                          <li><a href="#">자켓</a></li>
+                          <li><a href="#">코트</a></li>
+                          <li><a href="#">가디건</a></li>
+                          <li><a href="#">머플러</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">팬츠</a>
+                        <ul class="sub">
+                          <li><a href="#">청바지</a></li>
+                          <li><a href="#">짧은바지</a></li>
+                          <li><a href="#">긴바지</a></li>
+                          <li><a href="#">레깅스</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">악세서리</a>
+                        <ul class="sub">
+                          <li><a href="#">귀고리</a></li>
+                          <li><a href="#">목걸이</a></li>
+                          <li><a href="#">반지</a></li>
+                          <li><a href="#">팔찌</a></li>
+                        </ul>
+                      </li>
+                </ul>
+        </div>
+    </div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+</html>
